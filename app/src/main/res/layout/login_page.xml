@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/kangnam_logo2"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/kangnam_name"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintStart_toEndOf="@+id/kangnam_logo2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/name"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/id_layout"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="23dp"
+        android:background="#D3D3D3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/pw_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:srcCompat="@drawable/id_user"
+            android:importantForAccessibility="no" />
+
+        <EditText
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="아이디"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColorHint="#7A7A7A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pw_layout"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="23dp"
+        android:background="#D3D3D3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="7dp"
+            app:srcCompat="@drawable/id_pw"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/text_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColorHint="#7A7A7A"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btn_login"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="280dp"
+        android:background="#334EFF"
+        android:text="로그인"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

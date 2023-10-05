@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notebook_top_bar"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="#334EFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:text="노트북 존[4F]"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/notebook_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/notebook_cancel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="20dp"
+            android:background="#334EFF"
+            android:importantForAccessibility="no"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/reboot"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notebook_top_bar">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="411dp"
+            android:layout_height="480dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/scroll_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="91dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="91dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="56dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_1"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="56dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_3"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_2"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_5"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="33dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_6"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="92dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="6"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_2"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_5"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_7"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="7"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_6"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_8"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="92dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="8"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_4"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_7"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_9"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="9"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_8"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_10"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_9"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_11"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="76dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="11"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_10"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_12"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="12"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_11"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_13"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="33dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="13"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_14"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="14"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_6"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_13"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_15"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="15"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_7"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_14"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_16"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="16"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_8"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_15"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_17"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="17"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_9"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_16"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_18"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="18"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_10"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_17"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_19"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="76dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="19"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_11"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_18"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_20"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="20"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_12"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_19"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_21"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginTop="33dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="21"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_13"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_22"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="22"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_14"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_21"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_23"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="23"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_15"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_22"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_24"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="24"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_16"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_23"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_25"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="25"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_17"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_24"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_26"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="26"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_18"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_25"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_27"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginTop="76dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="27"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_19"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_26"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_28"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="28"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_20"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_27"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_29"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="33dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="29"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_21"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_30"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="30"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_22"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_29"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_31"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="31"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_23"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_30"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_32"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="32"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_24"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_31"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_33"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="33"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_25"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_32"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_34"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="34"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_26"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_33"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_35"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="76dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="35"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_27"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_34"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_36"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="36"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_28"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_35"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_37"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="81dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="37"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_38"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="66dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="38"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_37"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_39"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="69dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="39"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_38"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/note_sit_40"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="122dp"
+                        android:layout_marginTop="77dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/sit_button_border"
+                        android:text="40"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/note_sit_35"
+                        app:layout_constraintTop_toBottomOf="@+id/note_sit_39"
+                        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/profile_qr_imgview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+            app:srcCompat="@drawable/sit_1"
+            tools:ignore="ContentDescription,TooManyViews" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="배정가능"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profile_qr_imgview"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="15dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+            app:srcCompat="@drawable/sit_2"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="22dp"
+            android:text="사용 중"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="22dp"
+            android:text="가배정"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="smart Phone(+)"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="18dp"
+            android:text="노트북 좌석"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:srcCompat="@drawable/sit_4"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            app:srcCompat="@drawable/sit_6" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="배정가능[칸막이]"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="18dp"
+            android:text="장애우 좌석"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="9dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:srcCompat="@drawable/sit_5" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="13dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            app:srcCompat="@drawable/sit_7" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="9dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_qr_imgview"
+            app:srcCompat="@drawable/sit_3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
